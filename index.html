@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Portfolio - Mossane Diouf</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar">
+    <div class="brand">
+      <img src="assets/photo_accueil.jpg" alt="Logo Mossane" class="brand-img">
+      <span class="brand-title">Mon Portfolio</span>
+    </div>
+
+    <button id="burger" class="burger" aria-label="toggle menu">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="controls">
+      <button id="darkToggle" class="control-btn" title="Sombre / Clair">🌙</button>
+      <button id="enBtn" class="lang-btn">EN</button>
+      <button id="frBtn" class="lang-btn active">FR</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <figure class="hero-photo-wrap">
+        <img src="assets/photo_accueil.jpg" alt="Mossane Diouf" class="hero-photo">
+      </figure>
+      <div class="hero-text">
+        <h1 id="hero-line1">Bonjour, je suis Mossane Diouf</h1>
+        <h2 id="hero-line2">Développeuse Web Professionnelle</h2>
+        <h3 id="hero-line3">Designer graphique – Supports professionnels</h3>
+        <a href="#contact" class="btn hero-cta">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="skills-card about-card">
+      <h2>À propos de moi</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Je suis <strong>Mossane Diouf</strong>, designer graphique et développeuse web. 
+            Je crée des sites modernes, interactifs et fonctionnels avec un design élégant.
+            Passionnée par la technologie et le design, je transforme vos idées en solutions digitales efficaces et créatives.
+          </p>
+        </div>
+        <div class="about-img-wrap">
+          <img src="assets/photo_accueil.jpg" alt="Portrait de Mossane Diouf" class="about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills-section">
+    <div class="skills-card parcours">
+      <h2>Parcours Académique</h2>
+      <ul>
+        <li>Licence en Développement d'Applications et Administration Web - Université Alioune Diop de Bambey</li>
+        <li>Projets académiques et personnels en développement web</li>
+        <li>Formation en programmation orientée objet et bases de données</li>
+        <li>Formation en programmation chez Xarala</li>
+      </ul>
+    </div>
+    <div class="skills-card competence">
+      <h2>Compétences</h2>
+      <div class="skills-icons">
+        <figure><img src="assets/htmlt.png" alt="HTML"><figcaption>HTML</figcaption></figure>
+        <figure><img src="assets/css.png" alt="CSS"><figcaption>CSS</figcaption></figure>
+        <figure><img src="assets/js.png" alt="JavaScript"><figcaption>JavaScript</figcaption></figure>
+        <figure><img src="assets/php.png" alt="PHP"><figcaption>PHP</figcaption></figure>
+        <figure><img src="assets/laravel.png" alt="Laravel"><figcaption>Laravel</figcaption></figure>
+        <figure><img src="assets/mysql.jpeg" alt="MySQL"><figcaption>MySQL</figcaption></figure>
+        <figure><img src="assets/canva.jpeg" alt="Canva"><figcaption>Canva</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+ <!-- PROJECTS / PAGE 4 -->
+<section id="projects" class="projects">
+  <h2>Mes Projets</h2>
+  <div class="videos-row">
+    <article class="video-card">
+      <video controls preload="metadata" poster="assets/video1-poster.jpg">
+        <source src="assets/video.mp4" type="video/mp4">
+      </video>
+      <h3>Application Gestion des Tickets</h3>
+      <p>Gestion des tickets et rendez-vous dans le poste de santé de TOUBA TOUL.</p>
+      <a href="https://postesante.com" class="btn" target="_blank">Voir le projet</a>
+    </article>
+
+    <article class="video-card">
+      <video controls preload="metadata" poster="assets/video2-poster.jpg">
+        <source src="assets/video2.mp4" type="video/mp4">
+      </video>
+      <h3>Quelques réalisations graphiques</h3>
+      <p>Découvrez mes créations : CV, affiches, lettres de motivation et plus encore.</p>
+    </article>
+  </div>
+</section>
+  <!-- CV -->
+  <section id="cv" class="cv">
+    <h2>Mon CV</h2>
+    <iframe src="assets/cvmossou.pdf" title="CV Mossane" class="cv-iframe"></iframe>
+    <div class="cv-btns">
+      <a href="assets/cvmossou.pdf" download class="btn download-btn">Télécharger mon CV</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contactez-moi</h2>
+    <p class="contact-email">Email : <a href="mailto:mossoumoss@gmail.com">mossoumoss@gmail.com</a></p>
+    <form id="whatsappForm" class="contact-form">
+      <input id="name" type="text" placeholder="Votre nom" required>
+      <input id="email" type="email" placeholder="Votre mail" required>
+      <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn submit-btn">Envoyer sur WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Mossane Diouf. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
